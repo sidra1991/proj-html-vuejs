@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header-main class="center" />
+    <header-main />
     <First-Section class="center" />
     <available-book class="center" />
     <testimonial-world class="center" />
@@ -22,6 +22,7 @@ import SubscribeNewsletter from './components/subscribeNewsletter.vue'
 import CardsOter from './components/cardsOter.vue'
 import RecentArticles from './components/recentArticles.vue'
 import FooterMain from './components/footerMain.vue'
+
 export default {
   components: {
     headerMain,
@@ -38,6 +39,11 @@ export default {
 </script>
 
 <style lang="scss">
+  :root {
+  --safron: #f3b329;
+  --anzac: #e1aa40;
+}
+
   *{
     margin: 0;
     box-sizing: border-box;
