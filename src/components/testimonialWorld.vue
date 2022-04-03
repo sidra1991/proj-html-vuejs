@@ -1,6 +1,16 @@
 <template>
   <section>
-    io sono testimonialWorld
+  <div>
+    <h2>titolo</h2>
+    <h4>sotto titolo</h4>
+    <button></button>
+  </div>
+  <div>
+    <!--card-->
+    <div class="bg-card" >
+
+    </div>
+  </div>
   </section>
 </template>
 
@@ -12,7 +22,10 @@ export default {
 
 <style scoped lang="scss" >
   section{
-    height: 100px;
     background-color: blue;
+  }
+
+  .bg-card{
+    background-image: url(../assets/author/images/);
   }
 </style>

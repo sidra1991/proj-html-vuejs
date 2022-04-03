@@ -1,7 +1,9 @@
 <template>
   <section>
-    io sono FirstSection
-    <!-- un stesto con titlo e bottone , stile titolo in comune con ttitolo in header -->
+    <!-- un testo con titlo e bottone , stile titolo in comune con ttitolo in header -->
+    <h2>titolo</h2>
+    <p>paragrafo</p>
+    <button>eccolo</button>
   </section>
 </template>
 
@@ -14,6 +16,5 @@ export default {
 <style scoped lang="scss" >
   section{
     height: 100px;
-    background-color: blue;
   }
 </style>
