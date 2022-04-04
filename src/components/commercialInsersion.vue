@@ -38,6 +38,7 @@ export default {
     width: 50%;
     border-radius: 10px;
     border: 1px solid var(--keppel);
+    background-color:#f5fcfa ;
     text-decoration: none;
     color: black;
     text-align: center;

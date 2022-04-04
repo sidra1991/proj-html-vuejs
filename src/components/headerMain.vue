@@ -9,8 +9,11 @@
     <div class="header-div">
       <nav-bar />
       <!-- 2 pendici ad estrema destra  -->
-      <div>
-        <button>a1</button><button>a2</button>
+      <div class="btn-header-right" >
+        <button class="ex-btn" >a1 demos</button>
+      </div>
+      <div class="btn-header-right" >
+        <button class="ex-btn" > <span class="gr-text"> $ <strong>39</strong></span> On Sale  </button>
       </div>
       <!-- un riquadro in basso a destra contenente un articolo in vendita -->
       <commercial-insersion />
@@ -37,8 +40,29 @@ export default {
 
   .header-div{
     width: 50%;
-    height: 100%;
     display: inline-block;
+  }
+
+  .ex-btn{
+    display: block;
+    padding: 1rem;
+    width: 100px;
+    height: 100px;
+  }
+
+  .btn-header-right{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+
+  .gr-text{
+    color: lightgreen;
+    vertical-align: top;
+    strong{
+      font-size:2rem;
+    }
   }
 
 </style>
