@@ -70,6 +70,10 @@ export default {
     box-sizing: border-box;
   }
 
+  .gold-text{
+    color: var(--safron);
+  }
+
   .center{
     padding-left: 5%;
     padding-right: 5%;

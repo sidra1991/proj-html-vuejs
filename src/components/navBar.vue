@@ -60,7 +60,7 @@ export default {
   }
   a{
     display: inline-block;
-    padding-top:1rem;
+    padding-top:2rem;
     text-decoration: none;
     color:white;
     border-top:2px solid transparent;

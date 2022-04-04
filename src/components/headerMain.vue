@@ -1,22 +1,24 @@
 <template>
   <header>
-    <div class="header-div" >
-      <!-- logo a sinistra -->
-      <img src="../assets/author/images/author-logo-round-small.png" alt="">
-      <!-- la citazione di giornale-->
-      <news-paper-quote />
-    </div>
-    <div class="header-div">
-      <nav-bar />
-      <!-- 2 pendici ad estrema destra  -->
-      <div class="btn-header-right" >
-        <button class="ex-btn" >a1 demos</button>
+    <div class="shadow">
+      <div class="header-div" >
+        <!-- logo a sinistra -->
+        <img class="logo" src="../assets/author/images/author-logo-round-small.png" alt="">
+        <!-- la citazione di giornale-->
+        <news-paper-quote />
       </div>
-      <div class="btn-header-right" >
-        <button class="ex-btn" > <span class="gr-text"> $ <strong>39</strong></span> On Sale  </button>
+      <div class="header-div">
+        <nav-bar />
+        <!-- 2 pendici ad estrema destra  -->
+        <div class="btn-header-right" >
+          <button class="ex-btn" >a1 demos</button>
+        </div>
+        <div class="btn-header-right" >
+          <button class="ex-btn" > <span class="gr-text"> $ <strong>39</strong></span> On Sale  </button>
+        </div>
+        <!-- un riquadro in basso a destra contenente un articolo in vendita -->
+        <commercial-insersion class="window-right-bottom" />
       </div>
-      <!-- un riquadro in basso a destra contenente un articolo in vendita -->
-      <commercial-insersion />
     </div>
   </header>
 </template>
@@ -35,7 +37,10 @@ export default {
   header{
     background-image: url(../assets/author/images/hero-07-2x.jpg);
     background-size: cover;
-    display: flex;
+  }
+
+  .logo{
+    margin-left: 15%;
   }
 
   .header-div{
@@ -63,6 +68,21 @@ export default {
     strong{
       font-size:2rem;
     }
+  }
+
+  .shadow{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: black, $alpha: 0.6);
+    display: flex;
+  }
+
+  .window-right-bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30%;
   }
 
 </style>

@@ -6,8 +6,8 @@
       <h4>D.VAUGHN AUTOBIOGRAPHY</h4>
       <p>Vestibulum tristique turpis in ipsum egestas lobotis. Duis maximus bibendum volutpat. lorem ipsum dolor sit amet.</p>
     </div>
-      <a class="com-btn" >a Buy On Amazon</a>
-      <a class="com-btn" >a Buy On AppStore</a>
+      <a class="com-btn btn-border-right" >a Buy On Amazon</a>
+      <a class="com-btn btn-border-left" >a Buy On AppStore</a>
   </div>
 </template>
 
@@ -23,7 +23,6 @@ export default {
     display: flex;
     flex-wrap: wrap;
     padding: 2rem;
-    margin-left: 30%;
   }
 
   .content-commercial{
@@ -36,13 +35,20 @@ export default {
 
   .com-btn{
     width: 50%;
-    border-radius: 10px;
     border: 1px solid var(--keppel);
     background-color:#f5fcfa ;
     text-decoration: none;
     color: black;
     text-align: center;
     padding: 10px ;
-    }
+  }
+
+  .btn-border-right{
+    border-radius: 10px 0 0 10px;
+  }
+
+  .btn-border-left{
+    border-radius: 0 10px 10px 0;
+  }
 
 </style>
