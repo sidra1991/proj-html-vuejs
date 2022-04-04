@@ -6,8 +6,8 @@
         <h4>{{papersNews[idShow].from}}</h4>
     </div>
     <div>
-        <button><strong>done</strong> </button>
-        <button><strong>next</strong></button>
+        <button @click="undo ()" ><strong>done</strong> </button>
+        <button @click="next ()" ><strong>next</strong></button>
     </div>
 </div>
 </template>
@@ -23,8 +23,36 @@ export default {
           title: 'damon vaughn',
           content: 'Best-selling author and the most influential public intellectual in the western world right now.',
           from: '-The New York Times'
+        },
+        {
+          title: 'bla bla',
+          content: 'lorem ipsum pupo muco nuco',
+          from: '-booo'
+        },
+        {
+          title: 'damon vaughn',
+          content: 'senza testo',
+          from: '-The New York Times'
         }
       ]
+    }
+  },
+  methods: {
+    next () {
+      if (this.idShow < this.papersNews.length - 1) {
+        this.idShow = parseInt(this.idShow) + 1
+        console.log(this.idShow)
+      } else {
+        this.idShow = 0
+      }
+    },
+    undo () {
+      if (this.idShow > 0) {
+        this.idShow = parseInt(this.idShow) - 1
+        console.log(this.idShow)
+      } else {
+        this.idShow = this.papersNews.length - 1
+      }
     }
   }
 }
