@@ -1,6 +1,28 @@
 <template>
   <section>
-    io sono recentArticles
+    <div> <h2>titolo</h2> <h3>sottotitolo</h3> </div>
+    <div> <button></button> </div>
+
+    <div>
+      <div class="card-big">
+        <img src="https://picsum.photos/400/400" alt="">
+        <h3>titolo</h3>
+        <p class="dat" > data </p>
+        <p>paragrafo</p>
+      </div>
+      <div>
+        <div class="card-small" >
+          <img src="https://picsum.photos/200/200" alt="">
+          <h3>titolo</h3>
+          <p class="dat" > data </p>
+        </div>
+        <div class="card-small" >
+          <img src="https://picsum.photos/200/200" alt="">
+          <h3>titolo</h3>
+          <p class="dat" > data </p>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -12,7 +34,6 @@ export default {
 
 <style scoped lang="scss" >
   section{
-    height: 100px;
     background-color: blue;
   }
 </style>

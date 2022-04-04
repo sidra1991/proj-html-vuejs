@@ -1,7 +1,39 @@
 <template>
-  <section>
-    io sono footerMain
-  </section>
+  <footer>
+    <img src="../assets/author/images/author-logo-round-small.png" alt="">
+    <ul>
+      <h3>titolo</h3>
+      <li>voce</li>
+      <li>voce</li>
+      <li>voce</li>
+      <li>voce</li>
+      <li>voce</li>
+    </ul>
+        <ul>
+      <h3>titolo</h3>
+      <li>voce</li>
+      <li>voce</li>
+      <li>voce</li>
+      <li>voce</li>
+      <li>voce</li>
+    </ul>
+        <ul>
+      <h3>titolo</h3>
+      <li>voce</li>
+      <li>voce</li>
+      <li>voce</li>
+      <li>voce</li>
+      <li>voce</li>
+    </ul>
+        <ul>
+      <h3>titolo</h3>
+      <li>voce</li>
+      <li>voce</li>
+      <li>voce</li>
+      <li>voce</li>
+      <li>voce</li>
+    </ul>
+  </footer>
 </template>
 
 <script>
@@ -11,8 +43,7 @@ export default {
 </script>
 
 <style scoped lang="scss" >
-  section{
-    height: 100px;
-    background-color: red;
+  footer{
+    background-image: url(../assets/author/images/hero-07-2x.jpg);
   }
 </style>

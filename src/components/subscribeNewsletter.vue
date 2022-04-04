@@ -1,6 +1,9 @@
 <template>
   <section>
-    io sono subscibeNewsletter
+    <h2>titolo</h2>
+    <h3>sottotitolo</h3>
+    <input type="text"><button>iscriviti</button>
+    <p>annotazione</p>
   </section>
 </template>
 
@@ -12,7 +15,6 @@ export default {
 
 <style scoped lang="scss" >
   section{
-    height: 100px;
-    background-color: blue;
+    background-image: url(../assets/author/images/banner-2.jpg);
   }
 </style>
