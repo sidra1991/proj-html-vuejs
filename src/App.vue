@@ -65,6 +65,13 @@ export default {
     --tan:#d5ad91;
   }
 
+  .standard-btn{
+    background-color:#49a987 ;
+    border: 1px solid transparent;
+    padding:0.5rem;
+    color: white;
+  }
+
   *{
     margin: 0;
     box-sizing: border-box;

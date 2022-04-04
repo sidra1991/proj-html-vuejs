@@ -34,6 +34,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
   header{
     background-image: url(../assets/author/images/hero-07-2x.jpg);
     background-size: cover;
