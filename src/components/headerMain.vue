@@ -31,8 +31,8 @@ export default {
 <style scoped lang="scss">
   header{
     background-image: url(../assets/author/images/hero-07-2x.jpg);
-    height: 100vh;
     background-size: cover;
+    display: flex;
   }
 
   .header-div{

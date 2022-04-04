@@ -40,9 +40,30 @@ export default {
 
 <style lang="scss">
   :root {
-  --safron: #f3b329;
-  --anzac: #e1aa40;
-}
+    //color cube
+    --white:#ffffff;
+    --black: #030303;
+    --tundora: #434343;
+    --suva_gray: #868586;
+    --safron: #f3b329;
+    --pumice:#bec6be;
+    --blue_lagoon: #027986;
+    --corn_harvest:#936c0f;
+    --fontain_blue:#51bfc7;
+    --alizarin_crimson:#d61a2a;
+    //media cut
+    --draw_pink:#f3ece3;
+    --cod_gray:#1d1c1a;
+    --pewter:#96a4a3;
+    --sand_dune:#7c6e69;
+    --olso_gray:#86888e;
+    //material design
+    --anzac: #e1aa40;
+    --corpion:#5b5b5b;
+    --keppel:#3da698;
+    --merlin:#453e39;
+    --tan:#d5ad91;
+  }
 
   *{
     margin: 0;
