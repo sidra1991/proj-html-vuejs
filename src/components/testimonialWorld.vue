@@ -78,17 +78,6 @@ export default {
     display: inline-block;
   }
 
-  .btn-testimonial{
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background-color: var(--anzac);
-    border: 1px solid transparent;
-    color: white;
-    padding:10px;
-    border-radius: 5px;
-  }
-
   .omb-card{
     height: 100%;
     width: 100%;

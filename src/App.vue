@@ -85,4 +85,15 @@ export default {
     padding-left: 5%;
     padding-right: 5%;
   }
+
+  .btn-testimonial{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: var(--anzac);
+    border: 1px solid transparent;
+    color: white;
+    padding:10px;
+    border-radius: 5px;
+  }
 </style>
