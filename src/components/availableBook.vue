@@ -11,11 +11,11 @@
       <img src="../assets/author/images/audible-app-2x-400x418.png" alt="">
       <div class="available-text" >
         <h2 style="color:white;" >New Audiobook</h2>
-        <h3 class="gold-text" >NO TIME TO READ? NO PROBLEM. LISTEN TO IT</h3>
-        <p style="color:var(--suva_gray)" >Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt. maecenas eleifed congue cursus.</p>
-        <img src="../assets/author/images/audible-logo.png" alt="">
-        <img src="../assets/author/images/bn-logo-tall.png" alt="">
-        <img src="../assets/author/images/kindle-logo-tall.png" alt="">
+        <h5 class="gold-text" >NO TIME TO READ? NO PROBLEM. LISTEN TO IT</h5>
+        <p class="paragrap-available">Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt. maecenas eleifed congue cursus.</p>
+        <img class="logo-bottom" src="../assets/author/images/audible-logo.png" alt="">
+        <img class="logo-bottom" src="../assets/author/images/bn-logo-tall.png" alt="">
+        <img class="logo-bottom" src="../assets/author/images/kindle-logo-tall.png" alt="">
       </div>
     </div>
   </section>
@@ -33,8 +33,22 @@ export default {
     text-align: center;
   }
 
+  .logo-bottom{
+    margin-top:3rem;
+    margin-left: 2rem;
+  }
+
   .available-text{
-    display: inline-block;
+    text-align: center;
+    line-height: 2rem;
+    padding-top: 6rem;
+  }
+
+  .paragrap-available{
+    color:var(--suva_gray);
+    line-height: 1rem;
+    width: 370px;
+    margin-left: 4rem;
   }
 
   section{
@@ -47,5 +61,7 @@ export default {
     padding-top:2rem;
     width: 100%;
     background-image: url(../assets/author/images/banner.jpg);
+    display: flex;
+    justify-content: center;
   }
 </style>
