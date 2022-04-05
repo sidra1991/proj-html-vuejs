@@ -1,7 +1,7 @@
 <template>
   <section>
-    <h3>titolo</h3>
-    <h4>sottotitolo</h4>
+    <h3>Upcoming Events</h3>
+    <h4 class="gold-text" >Meet the author in person</h4>
     <card-event-component />
   </section>
 </template>
@@ -16,6 +16,9 @@ export default {
 
 <style scoped lang="scss" >
   section{
-    background-color: red;
+    text-align: center;
+    background-color:#fef7e9 ;
+    padding:2rem;
+    margin-top: 2rem;
   }
 </style>

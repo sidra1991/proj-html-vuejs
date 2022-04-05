@@ -1,10 +1,10 @@
 <template>
   <div>
-      <div v-for="(el, index) in 3 " :key="index">
-          <img src="https://picsum.photos/200/300" alt="">
-          <h3>titolo</h3>
+      <div class="card-event"  v-for="(el, index) in cards " :key="index">
+          <img :src="el.imgEvent" :alt="el.imgEvent">
+          <h3>{{el.title}}</h3>
           <hr>
-          <p>paragrafo</p>
+          <p>{{el.content}}</p>
 
       </div>
   </div>
@@ -12,8 +12,28 @@
 
 <script>
 export default {
-  name: 'cardOterComponent'
-
+  name: 'cardOterComponent',
+  data () {
+    return {
+      cards: [
+        {
+          imgEvent: '../assets/author/images/event-05.jpg',
+          title: 'About Me',
+          content: 'Vestibulum ante ipsum'
+        },
+        {
+          imgEvent: '../assets/author/images/event-04.jpg',
+          title: 'My Latest Book',
+          content: 'Vestibulum ante ipsum'
+        },
+        {
+          imgEvent: '../assets/author/images/event-07.jpg',
+          title: 'book Signing',
+          content: 'Vestibulum ante ipsum'
+        }
+      ]
+    }
+  }
 }
 </script>
 

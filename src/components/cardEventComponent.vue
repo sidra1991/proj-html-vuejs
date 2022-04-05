@@ -1,10 +1,10 @@
 <template>
   <div>
-      <div v-for="(el, index) in 3 " :key="index">
-          <img src="https://picsum.photos/200/300" alt="">
-          <h3>titolo</h3>
+      <div class="card-event"  v-for="(el, index) in cards " :key="index">
+          <img :src="el.imgEvent" :alt="el.imgEvent">
+          <h3>{{el.title}}</h3>
           <hr>
-          <p>paragrafo</p>
+          <p>{{el.content}}</p>
 
       </div>
   </div>
@@ -13,23 +13,23 @@
 <script>
 export default {
   name: 'cardEventComponent',
-  data (){
-    return{
-      cards:[
+  data () {
+    return {
+      cards: [
         {
-          img:'https://picsum.photos/200/300',
-          title:'chicago Book signing',
-          content:'mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.Mauris blandit elit, eget tincidunt nibh pulvinar a nulla.'
+          imgEvent: '../assets/author/images/event-05.jpg',
+          title: 'chicago Book signing',
+          content: 'mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.Prasent sapien massa, convallis a pellentesque nec, egestas.'
         },
         {
-          img:'https://picsum.photos/200/300',
-          title:'Meet & Greet With Amanda',
-          content:'Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.Prasent sapien massa, convallis a pellentesque nec egestas.'
+          imgEvent: '../assets/author/images/event-04.jpg',
+          title: 'Meet & Greet With Amanda',
+          content: 'Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.Prasent sapien massa, convallis a pellentesque nec egestas.'
         },
         {
-          img:'https://picsum.photos/200/300',
-          title:'chicago Book signing',
-          content:'mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.Mauris blandit elit, eget tincidunt nibh pulvinar a nulla.'
+          imgEvent: '../assets/author/images/event-07.jpg',
+          title: 'Open Book: Dialogue',
+          content: 'Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.Mauris blandit alique elit, eget tincidunt nibh pulvinar a nulla.'
         }
       ]
     }
@@ -39,5 +39,12 @@ export default {
 </script>
 
 <style>
-
+  .card-event{
+    text-align: center;
+    width: 320px;
+    height: 600px;
+    display:inline-block;
+    margin: 1rem;
+    line-height: 1.5rem;
+  }
 </style>
