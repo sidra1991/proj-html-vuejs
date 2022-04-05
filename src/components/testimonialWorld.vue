@@ -1,13 +1,13 @@
 <template>
   <section>
-  <div>
-    <div class="title-testimonial" >
-      <h2>What The Critics Say</h2>
-      <h4>TESTIMONIAL FROM AROUND THE WORLD</h4>
+  <div class="position-testimonial" >
+    <div>
+      <div class="title-testimonial" >
+        <h2>What The Critics Say</h2>
+        <h5>TESTIMONIAL FROM AROUND THE WORLD</h5>
+      </div>
+      <button class="btn-testimonial" >Read All testimonial</button>
     </div>
-    <button class="btn-testimonial" >Read All testimonial</button>
-  </div>
-  <div>
     <!--card-->
     <div class="testimonial-container" >
       <div class="bg-card " >
@@ -21,16 +21,18 @@
         </div>
       </div>
       <div>
-        <div class="square-pink" >
-          <h3>A True Masterpiece,Bravo!</h3>
-          <p>nulla quis lorem ut libero malesuada fegiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feug at.</p>
+        <div class="square-container-testimonial" >
+          <div class="square-pink" >
+            <h3>A True Masterpiece,Bravo!</h3>
+            <p>nulla quis lorem ut libero malesuada fegiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feug at.</p>
+          </div>
+          <span class="extra-pink-square" >mark Gerald Hendley, <strong>the Guardian</strong></span>
+          <div class="square-pink" >
+            <h3>A Unique view ok the world</h3>
+            <p>Donec sollicitudin molestie malesuada curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat. vestibulum ac diam sit amet.</p>
+          </div>
+          <span class="extra-pink-square" >mark Mary Maxey, <strong>the Globe And Mail</strong></span>
         </div>
-        <span>mark Gerald Hendley, <strong>the Guardian</strong></span>
-        <div class="square-pink" >
-          <h3>A Unique view ok the world</h3>
-          <p>Donec sollicitudin molestie malesuada curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat. vestibulum ac diam sit amet.</p>
-        </div>
-        <span>mark Mary Maxey, <strong>the Globe And Mail</strong></span>
       </div>
     </div>
   </div>
@@ -44,19 +46,42 @@ export default {
 </script>
 
 <style scoped lang="scss" >
+
+  .position-testimonial{
+    width: 60%;
+    margin-left: 20%;
+    position: relative;
+  }
+
   .title-testimonial{
-    width: 80%;
     display: inline-block;
     margin-top:2rem;
     margin-bottom: 1rem;
+    width: 50%;
+  }
+
+  .square-container-testimonial{
+    margin-left: 2rem;
+  }
+
+  h5{
+    color:#49a987;
   }
 
   .testimonial-container{
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .extra-pink-square{
+    padding-bottom:2rem;
+    display: inline-block;
   }
 
   .btn-testimonial{
+    position: absolute;
+    top: 50px;
+    right: 0;
     background-color: var(--anzac);
     border: 1px solid transparent;
     color: white;
@@ -88,7 +113,7 @@ export default {
     background-color:#fef7e9;
     width: 300px;
     text-align: center;
-    margin-left: 2rem;
+    padding: 1.5rem;
   }
 
   .bg-card{
